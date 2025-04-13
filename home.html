@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylin.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Home - Philippine Presidents and Legacies</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Georgia', serif; /* Historic-style font */
+            background-image: url('images/parchment-background.jpg'); /* Parchment-style background */
+            background-size: cover;
+            background-attachment: fixed;
+            color: #4a3c2f; /* Dark brown text for a vintage feel */
+            line-height: 1.8; /* Improve readability */
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar {
+            background-color: rgba(139, 69, 19, 0.9); /* Semi-transparent saddle brown */
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-link {
+            color: #ffd700; /* Gold for links */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #ffcc00; /* Brighter gold on hover */
+        }
+
+        h1, h2, h3 {
+            color: #4a3c2f; /* Dark brown for headings */
+            text-shadow: 2px 2px 4px #d2b48c; /* Subtle shadow for depth */
+        }
+
+        p {
+            color: #5a4a3a; /* Medium brown for body text */
+        }
+
+        .welcome-section {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .welcome-section h1 {
+            font-size: 3rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .welcome-section p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .about-section {
+            padding: 50px 20px;
+            background-color: rgba(255, 248, 220, 0.9); /* Cornsilk background for a warm feel */
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .featured-section {
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .featured-card {
+            max-width: 300px;
+            background-color: #fff;
+            border: 3px solid #d2b48c; /* Tan border for a vintage look */
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .featured-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .featured-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .featured-card p {
+            font-size: 1rem;
+            color: #6b5b4b;
+        }
+
+        footer {
+            background-color: #8b4513; /* Saddle brown footer for contrast */
+            color: #fff; /* White text for readability */
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ffd700; /* Gold for footer links */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffcc00; /* Brighter gold on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="figures.html" class="nav-link">Presidents</a>
+        <a href="events.html" class="nav-link">Legacies</a>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+        <h1>Welcome to Philippine History</h1>
+        <p>Explore the lives, achievements, and legacies of the Presidents of the Philippines. Discover the rich history that shaped the nation.</p>
+    </div>
+
+    <!-- About Section -->
+    <!-- Featured Sections -->
+    <div class="featured-section">
+        <div class="featured-card">
+            <a href="figures.html" class="w3-hover-opacity">
+                <img src="images/history.webp" alt="Presidents">
+                <h3>Presidents</h3>
+                <p>Discover the lives and achievements of Philippine presidents.</p>
+            </a>
+        </div>
+        <div class="featured-card">
+            <a href="events.html" class="w3-hover-opacity">
+                <img src="images/Jose p laurel event.jpg" alt="Events">
+                <h3>Legacies</h3>
+                <p>Explore the legacies and contributions of each president.</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+       
+        <p>Created by Corsiga, Lago, Odiongan, Panelo, Taguba, Vito</p>
+        <p><a href="https://philippines.fandom.com" target="_blank">Source: philippines.fandom.com</a></p>
+    </footer>
+</body>
+
+</html>
